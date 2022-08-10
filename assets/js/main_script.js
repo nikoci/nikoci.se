@@ -108,7 +108,7 @@
 
       $(function() {
           element.typed({
-              strings: ["Developer.", "Producer.", "Arijan Nikoci"],
+              strings: ["Developer.", "Engineer.", "Arijan Nikoci"],
               typeSpeed: 40,
               loop: true,
           });

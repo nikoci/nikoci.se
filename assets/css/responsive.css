@@ -74,8 +74,9 @@
     .navbar-brand span,
     .navbar-brand:hover, 
     .navbar-brand span:hover {
-        color: #333;
+        color: #fff;
     }
+
     .section-big {
         padding: 50px 0px;
     }
@@ -124,7 +125,7 @@
     }
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
-        background: #fff;
+        background: #141517;
     }
     .navbar {
         min-height: 0px;
@@ -149,9 +150,9 @@
         margin-top: 0;
     }
     .menu-area .container {
-        box-shadow: 0 0 5px #ddd;
-        background: #fff;
         padding: 5px 15px;
+        box-shadow: 0 0 5px #000;
+        background: #141517;
     }
 
     /* service area */

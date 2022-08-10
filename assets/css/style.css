@@ -46,6 +46,8 @@
 
 /* Google Font Load */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,800');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 
@@ -65,7 +67,7 @@ body {
     height: 100%;
     font-size: 15px;
     line-height: 1.7;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 h1,
@@ -135,7 +137,7 @@ fieldset {
 }
 
 .btn, input[type='submit'] {
-    background-color: transparent;
+    background-color: #101012;
 }
 
 .resume-btn {
@@ -225,12 +227,12 @@ fieldset {
 i {
     text-decoration: none;
     font-style: normal;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a.info-leading {
     color: #f0c674;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
     text-decoration: none;
 }
@@ -379,7 +381,7 @@ img {
 * -------------------------------------------------------------------------------------- */
 
 .slider-area {
-    background-image: url(../img/bg/intro-bg2.jpg);
+    background-image: url(../img/bg/intro-bg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -601,7 +603,6 @@ section#about{
     margin: 0;
     background: #101012;
     border-top: 2px solid #30333A;
-    box-shadow: 0 100px 40px #101012;
 }
 
 .service-area .section-title {
@@ -905,7 +906,7 @@ section#about{
 *                                   12. Contact area css
 * --------------------------------------------------------------------------------------- */
 .contact-area .container {
-    padding-top: 100px;
+    padding-top: 0px;
     max-width: 700px;
 }
 
@@ -1079,7 +1080,7 @@ section#about{
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -500px;
+  margin-top: 0;
 }
 
 .plans .plan input[type="radio"] {
@@ -1126,7 +1127,7 @@ section#about{
 .plans .plan .plan-details p {
   color: #7e8b93;
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 600;
   line-height: 18px;
 }
@@ -1227,4 +1228,30 @@ section#about{
     -ms-flex-align: baseline;
     align-items: baseline;
   }
+}
+
+
+div.whoami {
+    margin: auto;
+    max-width: 600px;
+    text-align: left;
+    padding: 10px 40px;
+    background: rgba(20, 21, 23, 0.692);
+    box-shadow: 0 5px 5px #000;
+    border-top: solid 1px #216ee0;
+}
+
+div.whoami h3 {
+    font-size: 20px;
+}
+
+div.whoami p {
+    font-size: 14px;
+    margin-left: 0px;
+    color: #aebcc5;
+}
+
+div.whoami .buttons {
+    margin: 20px 0;
+    text-align: center;
 }
