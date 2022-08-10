@@ -25,6 +25,9 @@
     <!-- ET Icons -->
     <link href="assets/css/et-line-icons.css" rel="stylesheet">
 
+    <!-- Custom Icons -->
+    <link href="assets/css/c-icons.css" rel="stylesheet">
+
     <!-- Normalizer css -->
     <link href="assets/css/normalize.css" rel="stylesheet">
 
@@ -40,6 +43,9 @@
 
     <!-- Responsive css -->
     <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/87c7e360ab.js" crossorigin="anonymous"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -132,13 +138,16 @@
 
 
     <!-- About area starts -->
+    <section>
+        <div class="gradient-container" />
+    </section>
     <section id="about" class="about-area section-big">
         <div class="container">
 
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="section-title">
-                        <h2><span>About</span> Me</h2>
+                        <h2>About</h2>
                         <p>I’ve always had a passion for good functionality and a fascination with the digital world, so it was perhaps inevitable that I would become a professional software developer.</p>
                     </div>
                 </div>
@@ -169,62 +178,22 @@
 
         </div>
     </section>
-    <!-- About area ends -->
+    <!-- About area ends -->    
 
 
 
 
     <!-- Service area starts -->
-    <section id="service" class="service-area section-big" style="background: #141517">
+    <section id="service" class="service-area section-big" style="background: #101012;">
         <div class="container">
 
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="section-title">
-                        <h2><span>What I</span> Do</h2>
-                        <p>I provide a variety of solutions for different situations. This is just a few of them</p>
+                        <h2>Services</h2>
                     </div>
                 </div>
             </div>
-
-            
-
-            <!--
-            <div class="row">
-
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="service-box service-box-1">
-                        <span class="icon-laptop"></span>
-                        <h3>Server software / Server Maintenance</h3>
-                        <p>Server software such as API's and workers. Linux server maintenance in Ubuntu, Arch Linux, CentOS and more...</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="service-box service-box-2">
-                        <span class="icon-layers"></span>
-                        <h3>Custom Programs for different operating systems</h3>
-                        <p>The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="service-box service-box-3">
-                        <span class="icon-mobile"></span>
-                        <h3>App Development [ Android, IOS ]</h3>
-                        <p>The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="service-box service-box-4">
-                        <span class="icon-lifesaver"></span>
-                        <h3>24/7 Support</h3>
-                        <p>The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
-                    </div>
-                </div>
-            </div>
-            -->
 
             <div class="container">
                 <div class="plans">
@@ -234,7 +203,9 @@
                         <img loading="lazy" src="assets/img/services/backend.png" alt="" />
                         <div class="plan-details">
                             <span>Backend Development</span>
-                            <p>For smaller business, with simple salaries and pay schedules.</p>
+                            <p>
+                                Backend development in <a href="" class="info-leading"><i class="iconmoon"></i> Java</a> , <a href="" class="info-leading"><i class="iconmoon"></i> C++</a> , <a href="" class="info-leading"><i class="iconmoon"></i> Python</a> and more. Often for functionality of a program/app
+                            </p>
                         </div>
                         </div>
                     </label>
@@ -245,7 +216,7 @@
                         <img loading="lazy" src="assets/img/services/app-development.png" alt="" />
                         <div class="plan-details">
                             <span>App Development</span>
-                            <p>For growing business who wants to create a rewarding place to work.</p>
+                            <p>Done by using <i class="iconmoon"></i> Flutter or Quasar, two amazing frameworks ontop of <a href="" class="info-leading"><i class="iconmoon"></i> JavaScript</a> or <a href="" class="info-leading"><i class="iconmoon"></i> TypeScript</a></p>
                         </div>
                         </div>
                     </label>
@@ -256,7 +227,7 @@
                         <img loading="lazy" src="assets/img/services/data-storage.png" alt="" />
                         <div class="plan-details">
                             <span>Server Maintenance</span>
-                            <p>For growing business who wants to create a rewarding place to work.</p>
+                            <p>Maintaining <a href="" class="info-leading"><i class="iconmoon"></i> Linux</a> servers means keeping them clean, installing new software, setting up services and alot more</p>
                         </div>
                         </div>
                     </label>
@@ -267,35 +238,109 @@
                         <img loading="lazy" src="assets/img/services/application.png" alt="" />
                         <div class="plan-details">
                             <span>Other</span>
-                            <p>For growing business who wants to create a rewarding place to work.</p>
+                            <p>Read more about what I do and what I can provide as a service by clicking here</p>
                         </div>
                         </div>
                     </label>
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container service-information">
 
-                <div id="backend-development-text">
-                    <h2>Backend Development</h2>
-                    <p>
-
-                    </p>
+                <div id="backend-development-text" class="information-card">
+                    <div class="information-content">
+                        <h2>Backend Development</h2>
+                        <p>
+                            I do alot of <b>Java</b> development, especially since the first language I learned was <b>Java</b>. I've done everything from a simple todo-app to a full-fleged monitoring software used mostly to monitor production, all done from scratch with <b>Java</b>.
+                            By that I would say I'm a pretty experienced <b>Java</b> developer but I also do alot of work in <b>C#</b> and <b>C++</b>. I often use <b>C#</b> to take advantage of <b>Microsoft's .NET framework</b> which in my opinion is amazing, and <b>C++</b> for when I easily need to manipulate resources of the machine since it's "close to hardware" (and it's fast).
+                            Now, these are just a few of the technologies I use for backend development but if you want more, feel free to <a href="#contact">contact</a> me.
+                            <br><br>
+                            For me, backend development is the go-to. I've always liked working on functionality and automation of computers. Backend development is also the core, if you will, of the program/application you're building.
+                        </p>
+                    </div>
+                    <div class="information-extra">
+                        <h6>Some of the technologies I use are</h6>
+                        <img src="assets/img/services/icons/icons8-java.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-c-sharp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-cpp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-kotlin.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-python.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-.net-framework.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-intellij-idea.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-mysql-logo.svg" alt="">
+                    </div>
                 </div>
 
-                <div id="app-development-text">
-                    <h2>App Development</h2>
+                <div id="app-development-text" class="information-card">
+                    <div class="information-content">
+                        <h2>App Development</h2>
+                        <p>
+                            I do alot of <b>Java</b> development, especially since the first language I learned was <b>Java</b>. I've done everything from a simple todo-app to a full-fleged monitoring software used mostly to monitor production, all done from scratch with <b>Java</b>.
+                            By that I would say I'm a pretty experienced <b>Java</b> developer but I also do alot of work in <b>C#</b> and <b>C++</b>. I often use <b>C#</b> to take advantage of <b>Microsoft's .NET framework</b> which in my opinion is amazing, and <b>C++</b> for when I easily need to manipulate resources of the machine since it's "close to hardware" (and it's fast).
+                            Now, these are just a few of the technologies I use for backend development but if you want more, feel free to <a href="#contact">contact</a> me.
+                            <br><br>
+                            For me, backend development is the go-to. I've always liked working on functionality and automation of computers. Backend development is also the core, if you will, of the program/application you're building.
+                        </p>
+                    </div>
+                    <div class="information-extra">
+                        <h6>Some of the technologies I use are</h6>
+                        <img src="assets/img/services/icons/icons8-java.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-c-sharp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-cpp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-kotlin.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-python.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-.net-framework.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-intellij-idea.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-mysql-logo.svg" alt="">
+                    </div>
                 </div>
 
-                <div id="server-maintenance-text">
-                    <h2>Server Maintenance</h2>
+                <div id="server-maintenance-text" class="information-card">
+                    <div class="information-content">
+                        <h2>Server Maintenance</h2>
+                        <p>
+                            I do alot of <b>Java</b> development, especially since the first language I learned was <b>Java</b>. I've done everything from a simple todo-app to a full-fleged monitoring software used mostly to monitor production, all done from scratch with <b>Java</b>.
+                            By that I would say I'm a pretty experienced <b>Java</b> developer but I also do alot of work in <b>C#</b> and <b>C++</b>. I often use <b>C#</b> to take advantage of <b>Microsoft's .NET framework</b> which in my opinion is amazing, and <b>C++</b> for when I easily need to manipulate resources of the machine since it's "close to hardware" (and it's fast).
+                            Now, these are just a few of the technologies I use for backend development but if you want more, feel free to <a href="#contact">contact</a> me.
+                            <br><br>
+                            For me, backend development is the go-to. I've always liked working on functionality and automation of computers. Backend development is also the core, if you will, of the program/application you're building.
+                        </p>
+                    </div>
+                    <div class="information-extra">
+                        <h6>Some of the technologies I use are</h6>
+                        <img src="assets/img/services/icons/icons8-java.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-c-sharp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-cpp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-kotlin.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-python.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-.net-framework.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-intellij-idea.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-mysql-logo.svg" alt="">
+                    </div>
                 </div>
 
-                <div id="other-text">
-                    <h2>Other</h2>
-                    <p>
-
-                    </p>
+                <div id="other-text" class="information-card">
+                    <div class="information-content">
+                        <h2>Other</h2>
+                        <p>
+                            I do alot of <b>Java</b> development, especially since the first language I learned was <b>Java</b>. I've done everything from a simple todo-app to a full-fleged monitoring software used mostly to monitor production, all done from scratch with <b>Java</b>.
+                            By that I would say I'm a pretty experienced <b>Java</b> developer but I also do alot of work in <b>C#</b> and <b>C++</b>. I often use <b>C#</b> to take advantage of <b>Microsoft's .NET framework</b> which in my opinion is amazing, and <b>C++</b> for when I easily need to manipulate resources of the machine since it's "close to hardware" (and it's fast).
+                            Now, these are just a few of the technologies I use for backend development but if you want more, feel free to <a href="#contact">contact</a> me.
+                            <br><br>
+                            For me, backend development is the go-to. I've always liked working on functionality and automation of computers. Backend development is also the core, if you will, of the program/application you're building.
+                        </p>
+                    </div>
+                    <div class="information-extra">
+                        <h6>Some of the technologies I use are</h6>
+                        <img src="assets/img/services/icons/icons8-java.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-c-sharp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-cpp.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-kotlin.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-python.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-.net-framework.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-intellij-idea.svg" alt="">
+                        <img src="assets/img/services/icons/icons8-mysql-logo.svg" alt="">
+                    </div>
                 </div>
 
             </div>
@@ -339,8 +384,7 @@
             <div class="row hidden">
                 <div class="col-md-12 text-center">
                     <div class="section-title">
-                        <h2><span>Happy</span> Clients</h2>
-                        <p>The new common language will be more simple and regular than.</p>
+                        <h2>Timeline</h2>
                     </div>
                 </div>
             </div>
@@ -348,34 +392,43 @@
             <div class="row">
                 <div class="testimonial-list demo-3">
 
+                    <div class="single-testimonial text-center">
+                        <span class="icon-gears"></span>
+                        <p>I do some freelancing on Fiverr too</p>
+                        <div class="clearfix"></div>                            
+                        <img src="assets/img/timeline/fiverr.png" alt="">
+                        <h4>Software Developer</h4>
+                        <p class="desg">January 2017 - Now</p> 
+                    </div>
+
                     <!-- Testimonial item -->
                     <div class="single-testimonial text-center">
-                        <span class="icon-quote"></span>
-                        <p>The new common language will be more simple and regular than. It will be more Occidental in fact. The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
+                        <span class="icon-gears"></span>
+                        <p>I worked at a truck parts manifacturer and it was alot of fun. Got some hands-on experience by fitting different parts with nuts/bolts. Not the typical "developer" job.</p>
                         <div class="clearfix"></div>                            
-                        <img src="assets/img/testi/1.jpg" alt="">
-                        <h4>- Mr. Jonathon Doe</h4>
-                        <p class="desg">Founder of web_bean</p> 
+                        <img src="assets/img/timeline/nitator.png" alt="">
+                        <h4>Mechanical Fitter</h4>
+                        <p class="desg">October 2020 - July 2022</p> 
+                    </div>
+                    
+                    <!-- Testimonial item -->
+                    <div class="single-testimonial text-center">
+                        <span class="icon-tools"></span>
+                        <p>This was actually my first job ever. I was still in school but it was fun getting to know the "real world" at the time, working as a caretaker.</p>
+                        <div class="clearfix"></div>                            
+                        <img src="assets/img/timeline/halmstad-kommun.png" alt="">
+                        <h4>Caretaker</h4>
+                        <p class="desg">June 2018 - July 2018</p> 
                     </div>
                     
                     <!-- Testimonial item -->
                     <div class="single-testimonial text-center">
                         <span class="icon-quote"></span>
-                        <p>The new common language will be more simple and regular than. It will be more Occidental in fact. The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
+                        <p>Worked on functionality of the website. One of my first real developer jobs.</p>
                         <div class="clearfix"></div>                            
-                        <img src="assets/img/testi/1.jpg" alt="">
-                        <h4>- Mr. Jonathon Doe</h4>
-                        <p class="desg">Founder of web_bean</p> 
-                    </div>
-                    
-                    <!-- Testimonial item -->
-                    <div class="single-testimonial text-center">
-                        <span class="icon-quote"></span>
-                        <p>The new common language will be more simple and regular than. It will be more Occidental in fact. The new common language will be more simple and regular than. It will be more Occidental in fact.</p>
-                        <div class="clearfix"></div>                            
-                        <img src="assets/img/testi/1.jpg" alt="">
-                        <h4>- Mr. Jonathon Doe</h4>
-                        <p class="desg">Founder of web_bean</p> 
+                        <img src="assets/img/timeline/halmstadtandlakarklinik.png" alt="">
+                        <h4>Web Developer</h4>
+                        <p class="desg">Mars 2022 - June 2022</p> 
                     </div>
 
                 </div>
@@ -395,8 +448,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="section-title">
-                        <h2><span>Contact</span> Me</h2>
-                        <p>The new common language will be more simple and regular than.</p>
+                        <h2>Contact</h2>
                     </div>
                 </div>
             </div>

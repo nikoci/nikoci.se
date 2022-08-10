@@ -56,7 +56,7 @@
 html,
 body {
     height: 100%;
-    background-color: #161719;
+    background-color: #141517;
 }
 
 body {
@@ -195,7 +195,6 @@ fieldset {
 
 .section-big {
     padding: 100px 0px;
-    border-bottom: 1px solid #2b2e33;
 }
 
 .section-small {
@@ -219,8 +218,25 @@ fieldset {
     margin-top: 0;
     position: relative;
     display: inline-block;
+    color: #fff;
 }
 
+i {
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+a.info-leading {
+    color: #f0c674;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.info-leading:hover {
+    color: #de925e;
+}
 
 
 /* preloader css */
@@ -260,7 +276,6 @@ img {
 .space {
     height: 80px;
 }
-
 
 
 /* ----------------------------------------------------------------------------------------
@@ -458,9 +473,24 @@ img {
 /* ----------------------------------------------------------------------------------------
 *                                   04. About area css
 * --------------------------------------------------------------------------------------- */
+
+.gradient-container {
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    margin-top: -200px;
+    background: rgb(20,21,23);
+    background: linear-gradient(360deg, rgba(20,21,23,1) 0%, rgba(20,21,23,0.7217087518601191) 50%, rgba(255,255,255,0) 100%); 
+}
+
+
 section {
     position: relative;
     z-index: 10;
+}
+
+section#about{
+    margin-top: 0px;
 }
 
 .me-image img {
@@ -626,10 +656,43 @@ section {
     margin: 0px;
 }
 
+.service-information {
+    margin-top: 0px;
+}
 
+.information-card {
+    max-width: 800px;
+    margin:auto;
+    padding: 20px;
+    text-align: center;
+}
 
+.information-card h2{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
 
+.information-card p{
+    text-align: left;
+    margin: 0 20px 0 20px;
+    color: #7f868b;
+    font-size: 14px;
+}
 
+.information-extra img {
+    width: 50px;
+    margin: 10px;
+}
+
+.information-extra h6{
+    color: #30333A;
+}
+
+.information-extra {
+    text-align: center;
+    margin: 60px 0 0 20px;
+}
 
 
 /* ----------------------------------------------------------------------------------------
@@ -772,13 +835,14 @@ section {
 }
 
 .single-testimonial p {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .single-testimonial img {
+    width: 100px;
     margin-top: 30px;
+    border: 4px solid #30333A;
     border-radius: 100px;
-    display: none;
 }
 
 .single-testimonial h4 {
@@ -917,7 +981,7 @@ section {
 *                                   13. Footer area css
 * --------------------------------------------------------------------------------------- */
 .footer-area {
-    background: #333;
+    background: #101012;
     text-align: center;
     color: #fff;
     padding-top: 50px;
@@ -981,7 +1045,6 @@ section {
 *                                   14. Custom css
 * --------------------------------------------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 .plans {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -999,6 +1062,7 @@ section {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: -500px;
 }
 
 .plans .plan input[type="radio"] {
@@ -1044,13 +1108,15 @@ section {
 
 .plans .plan .plan-details p {
   color: #7e8b93;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   line-height: 18px;
 }
 
 .plans .plan .plan-content:hover {
-  -webkit-box-shadow: 0px 3px 5px 0px #30333a;
-  box-shadow: 0px 3px 5px 0px #30333a;
+  -webkit-box-shadow: 0px 5px 10px 0px #000;
+  box-shadow: 0px 5px 10px 0px #000;
 }
 
 .plans .plan input[type="radio"]:checked + .plan-content:after {
@@ -1062,14 +1128,14 @@ section {
   right: 20px;
   top: 20px;
   border-radius: 100%;
-  border: 3px solid #fff;
-  -webkit-box-shadow: 0px 0px 0px 2px #0066ff;
-  box-shadow: 0px 0px 0px 2px #0066ff;
+  border: 3px solid #141517;
+  -webkit-box-shadow: 0px 0px 0px 2px #216ee0;
+  box-shadow: 0px 0px 0px 2px #216ee0;
 }
 
 .plans .plan input[type="radio"]:checked + .plan-content {
   border: 2px solid #216ee0;
-  background: #161719;
+  background: transparent;
   -webkit-transition: ease-in 0.3s;
   -o-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
@@ -1145,3 +1211,23 @@ section {
     align-items: baseline;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
