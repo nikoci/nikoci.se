@@ -1,0 +1,24 @@
+{
+  "name": "nikoci.se",
+  "version": "1.0.4",
+  "description": "nikoci.se",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoci/nikoci.se.git"
+  },
+  "author": "nikoci",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikoci/nikoci.se/issues"
+  },
+  "homepage": "https://github.com/nikoci/nikoci.se#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
