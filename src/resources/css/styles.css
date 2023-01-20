@@ -117,17 +117,15 @@ body {
   align-items: center;
 }
 .w-telling-art {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background: none;
   position: relative;
   justify-self: center;
   margin: 0 20px;
 }
-.w-telling-art img {
-  overflow: hidden;
-  width: inherit;
-  height: inherit;
+[data-theme=dark] .w-telling-art img {
+  opacity: 0.4;
 }
 .w-telling-text-links {
   display: flex;
@@ -207,7 +205,4 @@ main > * {
 
 /*
 *   ABOUT ME SECTION
-*/
-section.aboutme .w-telling-art {
-  background-image: url("../img/me.jpg");
-}/*# sourceMappingURL=styles.css.map */
+*//*# sourceMappingURL=styles.css.map */
