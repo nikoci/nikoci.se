@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Sofia+Sans);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --_size: 1.4rem;
+  --_radius: 0.2em;
+  --_tspeed_fast: 150ms;
+  --_tspeed_slow: 400ms;
+  --_ttype_squish: cubic-bezier(0.86, -0.1, 0.27, 1.15);
+  --color-white: 0, 0%, 93%;
+  --color-grey: 0, 0%, 87%;
+  --color-grey2: 0, 0%, 76%;
+  --color-black: 240, 5%, 4%;
+  --color-black2: 240, 14%, 8%;
+  --color-blue: 214, 89%, 42%;
+  --color-red: 344, 95%, 55%;
+  --color-green: 91, 61%, 69%;
+  --color-magenta: 282, 61%, 69%;
+  /* light color scheme */
+  --primary-bg--light: var(--color-white);
+  --primary-fg--light: var(--color-black2);
+  --secondary-bg--light: var(--color-grey);
+  --secondary-fg--light: var(--color-black);
+  --muted--light: var(--color-grey2);
+  --accent--light: var(--color-blue);
+  /* dark color scheme */
+  --primary-bg--dark: var(--color-black);
+  --primary-fg--dark: var(--color-grey);
+  --secondary-bg--dark: var(--color-black2);
+  --secondary-fg--dark: var(--color-white);
+  --muted--dark: var(--color-grey2);
+  --accent--dark: var(--color-blue);
+}
+:root[data-theme=light] {
+  --p-bg: var(--primary-bg--light);
+  --p-fg: var(--primary-fg--light);
+  --s-bg: var(--secondary-bg--light);
+  --s-fg: var(--secondary-fg--light);
+  --muted: var(--muted--light);
+  --accent: var(--accent--light);
+  color-scheme: light;
+}
+:root[data-theme=dark] {
+  --p-bg: var(--primary-bg--dark);
+  --p-fg: var(--primary-fg--dark);
+  --s-bg: var(--secondary-bg--dark);
+  --s-fg: var(--secondary-fg--dark);
+  --muted: var(--muted--dark);
+  --accent: var(--accent--dark);
+  color-scheme: dark;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(var(--accent));
+}
+a b {
+  text-decoration: underline;
+}
+a:hover {
+  color: hsl(var(--p-fg));
+}
+
+body {
+  font-family: "Sofia Sans";
+  font-size: var(--_size);
+  line-height: 1.5;
+  background-color: hsl(var(--p-bg));
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  padding: 10px;
+}
+header > * {
+  overflow: hidden;
+}
+header .title {
+  display: inherit;
+  grid-template-columns: 2em auto;
+  align-items: center;
+  justify-content: end;
+}
+header .title .logo {
+  fill: hsl(var(--accent));
+  width: 1.5em;
+}
+header .links {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+}
+header .links > * {
+  padding: 0 10px;
+  color: var(--p-fg);
+}
+header .links > *:hover {
+  color: hsl(var(--accent));
+}
+header .other p {
+  color: hsl(var(--s-fg));
+}/*# sourceMappingURL=styles.css.map */
