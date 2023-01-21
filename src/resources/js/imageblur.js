@@ -1,8 +1,4 @@
-document.onload = (e) => {
-    
-}
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', (e) => {
     const containers = document.querySelectorAll('.blur-boic')
 
     containers.forEach(container => {
@@ -39,16 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
-function getStyle(oElm, strCssRule){
-    var strValue = "";
+const getStyle = (element, cssRule) => {
+    var strValue = ""
     if(document.defaultView && document.defaultView.getComputedStyle){
-        strValue = document.defaultView.getComputedStyle(oElm, "").getPropertyValue(strCssRule);
+        strValue = document.defaultView.getComputedStyle(element, "").getPropertyValue(cssRule)
     }
-    else if(oElm.currentStyle){
-        strCssRule = strCssRule.replace(/\-(\w)/g, function (strMatch, p1){
-            return p1.toUpperCase();
+    else if(element.currentStyle){
+        cssRule = cssRule.replace(/\-(\w)/g, function (strMatch, p1){
+            return p1.toUpperCase()
         });
-        strValue = oElm.currentStyle[strCssRule];
+        strValue = element.currentStyle[cssRule]
     }
     return strValue;
 }

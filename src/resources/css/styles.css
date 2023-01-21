@@ -63,19 +63,20 @@ a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: rgb(var(--p-fg));
+  color: rgb(var(--accent));
 }
 a b {
   text-decoration: underline;
 }
 a:hover {
-  color: rgb(var(--accent));
+  color: rgb(var(--p-fg));
+  text-decoration: underline;
 }
 a.reverse {
-  color: rgb(var(--accent));
+  color: rgb(var(--p-fg));
 }
 a.reverse:hover {
-  color: rgb(var(--p-fg));
+  color: rgb(var(--accent));
 }
 
 button {
@@ -104,11 +105,25 @@ body {
 }
 
 .icon {
-  width: 1.2em;
+  width: 1.4em;
   color: rgb(var(--accent));
 }
 .icon.external {
   fill: rgb(var(--accent));
+}
+.icon.ml {
+  margin-left: 5px;
+}
+.icon.mr {
+  margin-right: 5px;
+}
+
+span.linespacer {
+  display: block;
+  height: 2px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: rgb(var(--s-bg));
 }
 
 .w-telling {
@@ -121,15 +136,17 @@ body {
   height: 300px;
   background: none;
   position: relative;
-  justify-self: center;
-  margin: 0 20px;
+  justify-self: end;
 }
 [data-theme=dark] .w-telling-art img {
   opacity: 0.4;
 }
+.w-telling-text p {
+  padding: 10px 0 0 10px;
+}
 .w-telling-text-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .w-telling-text-links a {
   margin: 0 10px;
@@ -164,6 +181,27 @@ header .container .links a {
   display: inline-block;
   padding: 0 14px;
 }
+header .container .other {
+  display: flex;
+  align-items: center;
+}
+header .container .other .themeswitch {
+  opacity: 0;
+  margin-left: 20px;
+  padding: 2px;
+  display: flex;
+  border: solid 2px rgb(var(--accent));
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity --_tspeed_slow ease;
+}
+header .container .other .themeswitch svg {
+  margin: 0;
+  padding: 2px;
+}
+header .container .other .themeswitch:hover svg {
+  fill: rgb(var(--accent));
+}
 .ontop header .container {
   position: absolute;
   width: 100%;
@@ -187,22 +225,9 @@ main {
   display: flex;
   justify-content: center;
 }
-main > * {
-  background-color: rgb(var(--p-bg));
-  /*
-  [data-theme="light"] body & { //Apply box-shadow only for light theme
-      box-shadow: 0 0 15px -12px rgb(var(--p-fg));
-      -webkit-box-shadow: 0 0 15px -12px rgb(var(--p-fg));
-      -moz-box-shadow: 0 0 15px -12px rgb(var(--p-fg));
-      clip-path: inset(0px -15px 0px -15px);
-  }*/
-}
 
 .content {
   width: 60%;
   padding: 10px;
-}
-
-/*
-*   ABOUT ME SECTION
-*//*# sourceMappingURL=styles.css.map */
+  margin-top: 50px;
+}/*# sourceMappingURL=styles.css.map */
