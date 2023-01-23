@@ -30,21 +30,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
         fgimg.style.width = 'inherit'
         fgimg.style.height = 'inherit'
         
+        container.style.borderRadius = '8px'
+
         container.appendChild(fgimg)
         container.appendChild(bgimg)
     })
 })
-
-const getStyle = (element, cssRule) => {
-    var strValue = ""
-    if(document.defaultView && document.defaultView.getComputedStyle){
-        strValue = document.defaultView.getComputedStyle(element, "").getPropertyValue(cssRule)
-    }
-    else if(element.currentStyle){
-        cssRule = cssRule.replace(/\-(\w)/g, function (strMatch, p1){
-            return p1.toUpperCase()
-        });
-        strValue = element.currentStyle[cssRule]
-    }
-    return strValue;
-}
