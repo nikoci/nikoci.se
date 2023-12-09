@@ -34,5 +34,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
         container.appendChild(fgimg)
         container.appendChild(bgimg)
+
+        bgimg.style.width = getStyle(fgimg, 'width')
+        bgimg.style.height = getStyle(fgimg, 'height')
     })
 })

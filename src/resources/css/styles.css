@@ -1,4 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Sofia+Sans);
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
@@ -359,3 +363,102 @@ section.projects .project-list .project:hover h3 {
 section.projects .project-list > * {
   margin: 40px;
 }/*# sourceMappingURL=styles.css.map */
+
+#w-telling-art-mobile {
+  display: none;
+  text-align: center;
+  margin: auto auto 40px auto;
+  width: 240px;
+  height: 240px;
+}
+
+.mobilemenu {
+  margin-left: 20px;
+  display: none;
+}
+
+
+@media only screen and (min-width: 860px) and (max-width: 1300px) {
+
+  .content {
+    width: 96%;
+  }
+
+  header .container > * {
+    margin: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  #w-telling-art-mobile {
+    display: block;
+  }
+
+  #w-telling-art-default {
+    display: none;
+  }
+
+  .content {
+    text-align: center;
+    width: 80%;
+  }
+
+  .w-telling {
+    padding: 0;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+  }
+
+  header .container > * {
+    margin: 10px 10px;
+  }
+
+  header .container .links{
+    display:none;
+  }
+
+  section.aboutme {
+    margin-top: 40px;
+  }
+
+  .mobilemenu {
+    display: flex;
+  }
+
+  .w-button-text {
+    display: none;
+  }
+
+  .w-grid4 {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+  }
+
+  .w-button {
+    display: flex;
+    padding: 8px;
+    color: rgb(var(--accent));
+    border-color: rgb(var(--accent));
+  }
+
+  .w-button-icon {
+    text-align: center;
+    margin: auto;
+  }
+
+  .textselector {
+    width: 100%;
+  }
+
+  section.skills .textselector > * {
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
