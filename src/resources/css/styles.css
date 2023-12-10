@@ -387,6 +387,10 @@ section.projects .project-list > * {
   header .container > * {
     margin: 10px 10px;
   }
+
+  section.projects .project-list {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 @media only screen and (max-width: 860px) {
@@ -455,6 +459,10 @@ section.projects .project-list > * {
 
   section.skills .textselector > * {
     width: 100%;
+  }
+
+  section.projects .project-list {
+    grid-template-columns: repeat(1, auto);
   }
 }
 
