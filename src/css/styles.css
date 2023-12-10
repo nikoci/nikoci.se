@@ -52,6 +52,7 @@ html {
   --s-fg: var(--secondary-fg--light);
   --muted: var(--muted--light);
   --accent: var(--accent--light);
+  --text-fg: var(--color-black3);
   color-scheme: light;
 }
 :root[data-theme=dark] {
@@ -61,12 +62,17 @@ html {
   --s-fg: var(--secondary-fg--dark);
   --muted: var(--muted--dark);
   --accent: var(--accent--dark);
+  --text-fg: var(--color-white3);
   color-scheme: dark;
 }
 
 /*
 *   GENERAL STYLING
 */
+p {
+  color: rgb(var(--text-fg));
+}
+
 a {
   display: flex;
   align-items: center;
@@ -407,7 +413,7 @@ section.projects .project-list > * {
 
   .content {
     text-align: center;
-    width: 80%;
+    width: 95%;
   }
 
   .w-telling {
@@ -426,7 +432,15 @@ section.projects .project-list > * {
   }
 
   section.aboutme {
-    margin-top: 40px;
+    margin-top: 10px;
+  }
+
+  header .container {
+    padding: 20px 0px;
+  }
+
+  header .other .contact {
+    display: none;
   }
 
   .mobilemenu {
@@ -448,7 +462,6 @@ section.projects .project-list > * {
     display: flex;
     padding: 8px;
     color: rgb(var(--accent));
-    border-color: rgb(var(--accent));
   }
 
   .w-button-icon {
@@ -472,4 +485,8 @@ section.projects .project-list > * {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.active-skill-button {
+  border-color: rgb(var(--accent));
 }

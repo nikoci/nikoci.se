@@ -21,7 +21,14 @@ const checkTSHeight = (wbtn) =>  {
 }
 
 const wButtonClick = (wbtn, e) => {
+    const wButtons = document.querySelectorAll('.w-button')
     const href = wbtn.getAttribute('data-href')
+    wButtons.forEach(wb => {
+        wb.classList.remove('active-skill-button')
+    })
+    wbtn.classList.add('active-skill-button')
+    
+
     if (href.startsWith('textselector')) {
         const textSelector = wbtn.parentElement.parentElement.querySelector('.textselector')
         const itemShowing = textSelector.querySelector('.show')
